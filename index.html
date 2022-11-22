@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pacman</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body onload="onInit()" onkeyup="movePacman(event)">
+    <h1>PACMAN</h1>
+
+    <h2>SCORE: <span>0</span></h2>
+    <h1 class="super-timer hidden">5</h1>
+    <div class="modal-container hidden">
+        <h2 class="gameover-msg">GAME OVER</h2>
+        <button class="gameover-btn" onclick="onRestartGame()">RESTART GAME</button>
+    </div>    
+    <div class="board-container">
+    </div>
+    <!-- <div class="modal-container hidden">
+        <h2 class="gameover-msg">GAME OVER</h2>
+        <button class="gameover-btn" onclick="onRestartGame()">RESTART GAME</button>
+    </div> -->
+    
+
+    <script src="js/utils.js"></script>
+    <script src="js/pacman.js"></script>
+    <script src="js/ghost.js"></script>
+    <script src="js/game.js"></script>
+</body>
+
+</html>
